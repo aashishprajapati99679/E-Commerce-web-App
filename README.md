@@ -45,7 +45,7 @@ This repository is split into three main parts:
 - **Frontend & Admin**: React (Vite), React Router DOM, Axios, React Toastify, Tailwind CSS
 - **Backend API**: Node.js, Express.js, Mongoose, Multer (file handling), Cloudinary SDK
 - **Database**: MongoDB Atlas
-- **Payments**: Stripe SDK, Razorpay SDK
+- **Payments**: Stripe SDK, Razorpay SDK (future plain's)
 
 ---
 
