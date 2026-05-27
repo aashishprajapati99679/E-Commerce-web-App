@@ -13,34 +13,34 @@ This repository is split into three main parts:
 
 | Component | Live Link |
 | :--- | :--- |
-| **🛍️ Customer Storefront** | [https://ecommerce-storefront-virid.vercel.app](https://ecommerce-storefront-virid.vercel.app/) |
-| **⚙️ Admin Dashboard** | [https://ecommerce-admin-brown-gamma.vercel.app](https://ecommerce-admin-brown-gamma.vercel.app/) |
-| **🔌 Backend API Server** | [https://ecommerce-backend-api-three.vercel.app](https://ecommerce-backend-api-three.vercel.app/) |
+| ** Customer Storefront** | [https://ecommerce-storefront-virid.vercel.app](https://ecommerce-storefront-virid.vercel.app/) |
+| ** Admin Dashboard** | [https://ecommerce-admin-brown-gamma.vercel.app](https://ecommerce-admin-brown-gamma.vercel.app/) |
+| ** Backend API Server** | [https://ecommerce-backend-api-three.vercel.app](https://ecommerce-backend-api-three.vercel.app/) |
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🛍️ Customer Storefront (`/frontend`)
+###  Customer Storefront (`/frontend`)
 - **Responsive UI/UX**: Optimized for mobile, tablet, and desktop screens using Tailwind CSS.
 - **Product Catalog**: Browse, search, filter, and sort products by categories and price.
 - **Cart Management**: Add, update, and remove products from the cart with persistence.
 - **Checkout Integrations**: Secure payment processing utilizing COD, Stripe, and Razorpay.
 - **Order Tracking**: Customers can check the status and history of their orders.
 
-### ⚙️ Admin Dashboard (`/admin`)
+###  Admin Dashboard (`/admin`)
 - **Product Management**: Add new products (with multiple image uploads), view product list, and remove products.
 - **Order Fulfilment**: View all orders placed across the system and update order status (e.g. *Order Placed, Packing, Shipped, Out for Delivery, Delivered*).
 - **Secure Access**: Admin authentication middleware preventing unauthorized entry.
 
-### 🔌 Backend API (`/backend`)
+###  Backend API (`/backend`)
 - **Serverless Ready**: Built with Express and fully configured for Vercel Serverless Functions.
 - **Cloudinary Integration**: Handles multipart image uploads and serves optimized product assets.
 - **Database Access**: MongoDB Atlas database integration.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend & Admin**: React (Vite), React Router DOM, Axios, React Toastify, Tailwind CSS
 - **Backend API**: Node.js, Express.js, Mongoose, Multer (file handling), Cloudinary SDK
@@ -49,7 +49,7 @@ This repository is split into three main parts:
 
 ---
 
-## 🚀 Environment Configurations
+##  Environment Configurations
 
 To run this project locally or configure it on Vercel, you need to set up the following environment variables:
 
