@@ -21,7 +21,6 @@ const loginUser = async (req, res) => {
             const token = createToken(user._id);
             res.json({ success: true, token });
         } else {
-            console.log(error);
             res.json({ success: false, message: 'Invalid Crenditial' });
         }
 
