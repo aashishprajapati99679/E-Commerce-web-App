@@ -13,9 +13,9 @@ This repository is split into three main parts:
 
 | Component | Live Link |
 | :--- | :--- |
-| ** Customer Storefront** | [https://ecommerce-storefront-virid.vercel.app](https://ecommerce-storefront-virid.vercel.app/) |
-| ** Admin Dashboard** | [https://ecommerce-admin-brown-gamma.vercel.app](https://ecommerce-admin-brown-gamma.vercel.app/) |
-| ** Backend API Server** | [https://ecommerce-backend-api-three.vercel.app](https://ecommerce-backend-api-three.vercel.app/) |
+| **Customer Storefront** | [https://ecommerce-storefront-virid.vercel.app](https://ecommerce-storefront-virid.vercel.app/) |
+| **Admin Dashboard** | [https://ecommerce-admin-brown-gamma.vercel.app](https://ecommerce-admin-brown-gamma.vercel.app/) |
+| **Backend API Server** | [https://ecommerce-backend-api-three.vercel.app](https://ecommerce-backend-api-three.vercel.app/) |
 
 ---
 
