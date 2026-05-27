@@ -1,42 +1,64 @@
-# E-Commerce-web-App
+# E-Commerce Web Application (MERN Stack)
 
-This is a complete MERN (MongoDB, Express, React, Node.js) Stack E-Commerce Web Application.
+A fully featured, responsive E-Commerce web application built using the MERN stack (MongoDB, Express.js, React, Node.js) with Stripe, Razorpay, and Cloudinary integrations. 
 
-## Project Structure
-- **frontend**: The user-facing storefront built with React + Vite + Tailwind CSS.
-- **admin**: The administrative panel built with React + Vite + Tailwind CSS.
-- **backend**: The Express Node.js API server handling MongoDB connection, authentication, and payments (Stripe/Razorpay/Cloudinary).
+This repository is split into three main parts:
+* **Frontend**: Customer storefront application.
+* **Admin**: Administration dashboard for managing products, categories, and orders.
+* **Backend**: RESTful API server.
 
 ---
 
-## Hosting on Vercel
+## 🔗 Live Deployments
 
-This repository has been configured to be deployed easily to **Vercel**. Each sub-folder can be deployed as an independent project.
+| Component | Live Link |
+| :--- | :--- |
+| **🛍️ Customer Storefront** | [https://ecommerce-storefront-virid.vercel.app](https://ecommerce-storefront-virid.vercel.app/) |
+| **⚙️ Admin Dashboard** | [https://ecommerce-admin-brown-gamma.vercel.app](https://ecommerce-admin-brown-gamma.vercel.app/) |
+| **🔌 Backend API Server** | [https://ecommerce-backend-api-three.vercel.app](https://ecommerce-backend-api-three.vercel.app/) |
 
-### 1. Deploying the Backend API
-The backend is prepared to run as a serverless function on Vercel.
-1. Sign in to your [Vercel Dashboard](https://vercel.com).
-2. Click **Add New** > **Project** and import this GitHub repository.
-3. For the **Backend** project:
-   - **Framework Preset**: Other (automatically detected)
-   - **Root Directory**: `backend`
-   - **Environment Variables**: Add all the keys from `backend/.env` (e.g. `MONGODB_URI`, `CLOUDINARY_API_KEY`, `CLOUDINARY_SECRET_KEY`, `CLOUDINARY_NAME`, `JWT_SECRET`, etc.).
-4. Click **Deploy**. This will give you a backend production URL (e.g., `https://your-backend-api.vercel.app`).
+---
 
-### 2. Deploying the Frontend (Storefront)
-1. In Vercel, click **Add New** > **Project** and import the same repository again.
-2. For the **Frontend** project:
-   - **Framework Preset**: Vite
-   - **Root Directory**: `frontend`
-   - **Environment Variables**:
-     - `VITE_BACKEND_URL`: Set this to your production backend URL (e.g., `https://your-backend-api.vercel.app`). Do not add a trailing slash.
-3. Click **Deploy**.
+## ✨ Features
 
-### 3. Deploying the Admin Panel
-1. In Vercel, click **Add New** > **Project** and import the same repository again.
-2. For the **Admin** project:
-   - **Framework Preset**: Vite
-   - **Root Directory**: `admin`
-   - **Environment Variables**:
-     - `VITE_BACKEND_URL`: Set this to your production backend URL (e.g., `https://your-backend-api.vercel.app`). Do not add a trailing slash.
-3. Click **Deploy**.
+### 🛍️ Customer Storefront (`/frontend`)
+- **Responsive UI/UX**: Optimized for mobile, tablet, and desktop screens using Tailwind CSS.
+- **Product Catalog**: Browse, search, filter, and sort products by categories and price.
+- **Cart Management**: Add, update, and remove products from the cart with persistence.
+- **Checkout Integrations**: Secure payment processing utilizing COD, Stripe, and Razorpay.
+- **Order Tracking**: Customers can check the status and history of their orders.
+
+### ⚙️ Admin Dashboard (`/admin`)
+- **Product Management**: Add new products (with multiple image uploads), view product list, and remove products.
+- **Order Fulfilment**: View all orders placed across the system and update order status (e.g. *Order Placed, Packing, Shipped, Out for Delivery, Delivered*).
+- **Secure Access**: Admin authentication middleware preventing unauthorized entry.
+
+### 🔌 Backend API (`/backend`)
+- **Serverless Ready**: Built with Express and fully configured for Vercel Serverless Functions.
+- **Cloudinary Integration**: Handles multipart image uploads and serves optimized product assets.
+- **Database Access**: MongoDB Atlas database integration.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend & Admin**: React (Vite), React Router DOM, Axios, React Toastify, Tailwind CSS
+- **Backend API**: Node.js, Express.js, Mongoose, Multer (file handling), Cloudinary SDK
+- **Database**: MongoDB Atlas
+- **Payments**: Stripe SDK, Razorpay SDK
+
+---
+
+## 🚀 Environment Configurations
+
+To run this project locally or configure it on Vercel, you need to set up the following environment variables:
+
+### 1. Backend (`/backend/.env`)
+```env
+MONGODB_URI = "your-mongodb-atlas-uri"
+CLOUDINARY_API_KEY = "your-cloudinary-api-key"
+CLOUDINARY_SECRET_KEY = "your-cloudinary-api-secret"
+CLOUDINARY_NAME = "your-cloudinary-cloud-name"
+JWT_SECRET = "your-jwt-signing-secret"
+ADMIN_EMAIL = "admin@example.com"
+ADMIN_PASSWORD = "secure-admin-password"
